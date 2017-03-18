@@ -51,6 +51,15 @@ time{
   font-size: 1.25em;
 }
 
+.bigdate div{
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #000000;
+  font-family: 'Roboto', sans-serif;
+}
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -64,14 +73,15 @@ time{
   font-family: 'Roboto', sans-serif;
 }
 
+
 .timeline ul li::after {
   content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: inherit;
 }
@@ -93,6 +103,7 @@ time{
   width: 0;
   height: 0;
   border-style: solid;
+
 }
 
 
@@ -105,11 +116,13 @@ time{
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #D1D1D1 transparent transparent;
+
 }
 
 /*Even Elements */
 .timeline ul li:nth-child(even) div {
   left: -439px;
+
 }
  
 .timeline ul li:nth-child(even) div::before {
@@ -126,15 +139,17 @@ time{
  
 .timeline ul li.in-view::after {
   background: #455a64;
-
+  border-style: solid;
+  border-width: 5px;
 }
  
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
   transition: all .5s ease-in-out;
+  border-radius: 15px;
 }
- 
+
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px,0,0);
 }
