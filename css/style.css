@@ -115,7 +115,7 @@ time{
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #D1D1D1 transparent transparent;
+  border-color: transparent #f0f0f0 transparent transparent;
 
 }
 
@@ -128,7 +128,7 @@ time{
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #D1D1D1;
+  border-color: transparent transparent transparent #f0f0f0;
 }
 
 /*AFTER Element */
@@ -138,9 +138,15 @@ time{
 }
  
 .timeline ul li.in-view::after {
-  background: #455a64;
   border-style: solid;
   border-width: 5px;
+  background:#455a64;
+}
+/*SPECIFIC IMAGES CAN GO HERE*/
+.timeline ul .img.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("AKI.png");
 }
  
 .timeline ul li div {
@@ -191,7 +197,7 @@ time{
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #f0f0f0 transparent transparent;
   }
 }
 
