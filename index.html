@@ -10,24 +10,41 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     
     <script src="js/main.js"></script>
-    
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/snap.svg-min.js"></script>
     
     <link rel="stylesheet" href="css/style.css"  type='text/css'>
-  	
+  	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    
 	<title>Information Control</title>
 </head>
 <body>
+    
+    <!-- MODAL SETUP -->
+    <div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+                <div id="topModal"><h3>Event One - 19XX  <button class="md-close"><img src="assets/x-01.svg" id="svgClose"></button> </h3></div>
+                
+				<div>
+					<p>Stalin assassinates Hitler in this alternative timeline. As a result (or at least in relation), the following things happened</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    
+    <!-- BODY -->
     <container>
         <section class="intro">
             <div>
                 <h1>
-                    CENSORSHIP
+                    INFORMATION
                 </h1>
                 <h1 style="color: white; padding:0px;">
-                     AND
-                </h1>
-                <h1>
-                    PROPAGANDA
+                     CONTROL
                 </h1>
             </div>
         </section>
@@ -37,7 +54,8 @@
                 <li>
                     <div>
                         <time>Some historical Event  - 1934</time>
-                        <p>Text goes here</p>
+                        <p>Text goes here <button class="md-trigger" data-modal="modal-1">More</button></p>
+                        
                     </div>
                 </li>
 
@@ -106,5 +124,17 @@
             </ul>
         </section>
     </container>
+    
+    
+    <div class="md-overlay"></div><!-- the overlay element -->
+
+		<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+
+		<!-- for the blur effect -->
+		<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+
+		<script src="js/cssParser.js"></script>
 </body>
 </html>
