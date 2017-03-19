@@ -63,6 +63,30 @@ time{
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+button {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: rgba(0,0,0,0.0);
+    color:aliceblue;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+}
+button:focus {outline:0;}
+
+.md-trigger
+{
+    transition: all 0.2s;
+    background-color:#323232;
+    float:right;
+    border-radius: 10px;
+}
+.md-trigger:hover {transition: all 0.2s; background-color:#424242;}
+.md-trigger:active {transition: all 0.2s; background-color:#252525;}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -203,5 +227,3 @@ time{
     border-color: transparent #f0f0f0 transparent transparent;
   }
 }
-
-
