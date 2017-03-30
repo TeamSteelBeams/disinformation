@@ -198,7 +198,7 @@ button:focus {outline:0;}
 }
 
 
-
+---------------------------/*@ media shit*/------------------------------
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
@@ -227,3 +227,22 @@ button:focus {outline:0;}
     border-color: transparent #f0f0f0 transparent transparent;
   }
 }
+
+----------------/* stops focus / bluehighlight shit */-----------------
+button:focus {outline:0;}
+
+.container:focus {outline:0}
+
+h1:focus {outline:0}
+
+time:focus {outline:0}
+
+.bigdate div:focus {outline:0}
+
+.md-trigger:focus {outline:0}
+
+.md-close:focus {outline:0}
+
+svgClose:focus {outline:0}
+
+.timeline ul li:focus {outline:0}
