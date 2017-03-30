@@ -6,6 +6,37 @@ Note that we need a container wrapping all content on the page for the
 perspective effects (not including the modals and the overlay).
 */
 
+
+/*eric's additions*/
+@media screen and (max-width: 1921px)
+{
+    .modal-imgDiv{width:700px; height:700px; float: left; padding:0px}
+    .modal-img{width:100%}
+    .modal-textDiv{float:right !important; margin-left: 0px; margin-right: 50px !important; padding:15px 0px 0px 0px !important; word-wrap: break-word; !important}
+    
+}
+
+
+@media screen and (max-width: 1200px)
+{
+    .modal-imgDiv{width:500px; height:500px; margin: 0 auto;}
+    {
+
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    .modal-imgDiv{width:75%}
+}
+
+@media screen and (max-width: 600px)
+{
+    .modal-imgDiv{width:50%}
+}
+
+
+
 .body
 {
     background-color: black;
@@ -46,8 +77,11 @@ perspective effects (not including the modals and the overlay).
 	border-radius: 3px;
 	margin: 0 auto;
     height: 100%;
+    overflow-y: auto;
     
 }
+
+
 
 .md-close
 {
@@ -87,8 +121,8 @@ perspective effects (not including the modals and the overlay).
 	border-radius: 3px 3px 0 0;
 }
 
-.md-content > div {
-	padding: 15px 40px 30px;
+.md-content div {
+	padding: 15px 40px 30px 15px;
 	margin: 0;
 	font-weight: 300;
 	font-size: 1.15em;

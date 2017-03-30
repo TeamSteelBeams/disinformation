@@ -47,6 +47,11 @@ h1 {
     text-align:center;
 }
 
+h2
+{
+    font-size: 1.5em;
+}
+
 time{
   font-size: 1.25em;
 }
@@ -173,7 +178,7 @@ button:focus {outline:0;}
 .timeline ul .img.in-view::after {
   border-style: solid;
   border-width: 5px;
-  background-image: url("AKI.png");
+  background-image: url("../assets/AKI.png");
 }
  
 .timeline ul li div {
@@ -199,6 +204,10 @@ button:focus {outline:0;}
 
 
 ---------------------------/*@ media shit*/------------------------------
+
+@media screen and (max-width: 1200px){
+    
+}
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
@@ -206,12 +215,15 @@ button:focus {outline:0;}
   .timeline ul li:nth-child(even) div {
     left: -289px; /*250+45-6*/
   }
+    
+
 }
 
 @media screen and (max-width: 600px) {
   .timeline ul li {
     margin-left: 20px;
   }
+    
    
   .timeline ul li div {
     width: calc(100vw - 91px);
@@ -246,3 +258,11 @@ time:focus {outline:0}
 svgClose:focus {outline:0}
 
 .timeline ul li:focus {outline:0}
+
+.timeline ul: focus {outline:0}
+
+.timeline:focus {outline:0}
+
+md-content:focus {outline:0}
+
+
