@@ -55,7 +55,7 @@ h2
 time{
   font-size: 1.25em;
 }
-
+/*
 .bigdate div{
   list-style-type: none;
   position: relative;
@@ -64,7 +64,7 @@ time{
   padding-top: 50px;
   background: #000000;
   font-family: 'Roboto', sans-serif;
-}
+}*/
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -175,12 +175,44 @@ button:focus {outline:0;}
 
 }
 /*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+.timeline ul .sacrates.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/sacrates.png");
+}
+.timeline ul .book.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/book-01.png");
+}
 .timeline ul .img.in-view::after {
   border-style: solid;
   border-width: 5px;
   background-image: url("../assets/AKI.png");
 }
- 
+ /*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
+/*SPECIFIC IMAGES CAN GO HERE*/
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
@@ -200,6 +232,56 @@ button:focus {outline:0;}
   transform: none;
   visibility: visible;
   opacity: 1;
+}
+
+
+.timeline ul li div.bigDate{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  border-radius: 15px;
+  background:#555555; 
+  color: white; 
+  border-radius:0px;
+}
+
+.timeline ul li:nth-child(odd) div.bigDate {
+  transform: translate3d(300px,0,0);
+}
+ 
+.timeline ul li:nth-child(even) div.bigDate {
+  transform: translate3d(-300px,0,0);
+}
+ 
+.timeline ul li:nth-child(even).in-view div.bigDate {
+  transform: translate3d(80px,0,0);
+  visibility: visible;
+  opacity: 1;
+  z-index:9999;
+}
+.timeline ul li:nth-child(odd).in-view div.bigDate {
+  transform: translate3d(-80px,0,0);
+  visibility: visible;
+  opacity: 1;
+  z-index:9999;
+}
+
+
+
+
+.timeline ul li:nth-child(even) div.bigDate::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f0f0f0;
+  opacity: 0.0;
+}
+
+.timeline ul li:nth-child(odd) div.bigDate::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f0f0f0 transparent transparent;
+  opacity: 0.0;
+
 }
 
 
@@ -237,6 +319,16 @@ button:focus {outline:0;}
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #f0f0f0 transparent transparent;
+  }
+  .timeline ul li div.bigDate {
+    width: calc(100vw);
+  }
+   
+  .timeline ul li:nth-child(even) div.bigDate {
+    left: -80px;
+  }
+  .timeline ul li:nth-child(odd) div.bigDate {
+    left: 80px;
   }
 }
 
