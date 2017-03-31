@@ -10,24 +10,28 @@ perspective effects (not including the modals and the overlay).
 /*eric's additions*/
 @media screen and (max-width: 1921px)
 {
-    .modal-imgDiv{width:700px; height:700px; float: left; padding:0px}
+    .modal-imgDiv{width:40%; height:auto; display:inline-block; padding:15px}
     .modal-img{width:100%}
-    .modal-textDiv{float:right !important; margin-left: 0px; margin-right: 50px !important; padding:15px 0px 0px 0px !important; word-wrap: break-word; !important}
+    .modal-textDiv{width: 55%; height:auto; display: inline-block; padding:15px 0px 0px 5px; margin-top:0px; vertical-align:top;}
+    h2{font-size: 2em;}
     
 }
 
 
 @media screen and (max-width: 1200px)
 {
-    .modal-imgDiv{width:500px; height:500px; margin: 0 auto;}
-    {
-
-    }
+    .modal-imgDiv{width:30%; height:auto; display:inline-block; padding:15px}
+    .modal-img{width:100%}
+    .modal-textDiv{width: 60%; height:auto; display: inline-block; margin-top:0px; vertical-align:top;}
+    h2{font-size: 1.5em;}
+    
 }
 
 @media screen and (max-width: 900px)
 {
-    .modal-imgDiv{width:75%}
+    .modal-imgDiv{width:40%;}
+    .modal-textDiv{width:75%;padding:0;}
+    .md-content{text-align:center;}
 }
 
 @media screen and (max-width: 600px)
@@ -52,10 +56,10 @@ perspective effects (not including the modals and the overlay).
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 89%;
+	width: 90%;
 	max-width: 1920px;
 	min-width: 320px;
-	height: 89%;
+	height: auto;
 	z-index: 5;
 	visibility: hidden;
 	
@@ -76,7 +80,7 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
-    height: 100%;
+    height: auto;
     overflow-y: auto;
     
 }
@@ -120,31 +124,6 @@ perspective effects (not including the modals and the overlay).
 	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
 }
-
-.md-content div {
-	padding: 15px 40px 30px 15px;
-	margin: 0;
-	font-weight: 300;
-	font-size: 1.15em;
-}
-
-.md-content > div p {
-	margin: 0;
-	padding: 10px 0;
-}
-
-.md-content > div ul {
-	margin: 0;
-	padding: 0 0 30px 20px;
-}
-
-.md-content > div ul li {
-	padding: 5px 0;
-}
-
-
-
-/* Individual modal styles with animations/transitions */
 
 /* Effect 1: Fade in and scale up */
 .md-effect-1 .md-content {

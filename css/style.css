@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
     text-align:center;
 }
 
@@ -297,16 +297,18 @@ button:focus {outline:0;}
   .timeline ul li:nth-child(even) div {
     left: -289px; /*250+45-6*/
   }
-    
+
+    .intro h1{font-size:75px;}
 
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
+    .intro h1{font-size:50px;}
+    
+    .timeline ul li {
     margin-left: 20px;
   }
     
-   
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
