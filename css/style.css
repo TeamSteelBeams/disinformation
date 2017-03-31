@@ -189,13 +189,24 @@ button:focus {outline:0;}
 .timeline ul .sacrates.in-view::after {
   border-style: solid;
   border-width: 5px;
-  background-image: url("../assets/sacrates.png");
+  background-image: url("../assets/icons/sacrates.png");
+}
+.timeline ul .paper.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/paper-01.png");
 }
 .timeline ul .book.in-view::after {
   border-style: solid;
   border-width: 5px;
-  background-image: url("../assets/book-01.png");
+  background-image: url("../assets/icons/book-01.png");
 }
+.timeline ul .print.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Print-01.png");
+}
+
 .timeline ul .img.in-view::after {
   border-style: solid;
   border-width: 5px;
@@ -257,13 +268,13 @@ button:focus {outline:0;}
   transform: translate3d(80px,0,0);
   visibility: visible;
   opacity: 1;
-  z-index:9999;
+  z-index:2;
 }
 .timeline ul li:nth-child(odd).in-view div.bigDate {
   transform: translate3d(-80px,0,0);
   visibility: visible;
   opacity: 1;
-  z-index:9999;
+  z-index:2;
 }
 
 
