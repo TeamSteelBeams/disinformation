@@ -211,7 +211,31 @@ button:focus {outline:0;}
   border-width: 5px;
   background-image: url("../assets/icons/post-01.png");
 }
-
+.timeline ul .burn.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/bookburning-01.png");
+}
+.timeline ul .radio.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/radio-01.png");
+}
+.timeline ul .ussr.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/ussr-01.png");
+}
+.timeline ul .famine.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/famine-01.png");
+}
+.timeline ul .internet.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/internet-01.png");
+}
 .timeline ul .img.in-view::after {
   border-style: solid;
   border-width: 5px;
