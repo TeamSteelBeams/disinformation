@@ -273,6 +273,68 @@ button:focus {outline:0;}
   border-width: 5px;
   background-image: url("../assets/icons/worldFair-01.png");
 }
+
+.timeline ul .quake.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Quake-01.png");
+}
+
+.timeline ul .chains.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Chains-01.png");
+}
+.timeline ul .moon.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Moon-01.png");
+}
+
+.timeline ul .mammoth.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/mammoth-01.png");
+}
+
+.timeline ul .us.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/US-01.png");
+}
+
+.timeline ul .castro.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Castro-01.png");
+}
+
+.timeline ul .atomic.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Atomic-01.png");
+}
+
+.timeline ul .email.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Email-01.png");
+}
+
+.timeline ul .internet.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Internet-01.png");
+}
+
+.timeline ul .social.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/Social-01.png");
+}
+
+
+
  /*SPECIFIC IMAGES CAN GO HERE*/
 
 
