@@ -11,7 +11,7 @@
 
 .responsive-img{
 	width:100%;
-	height:auto;	
+	height:auto;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   color: #fff;
   overflow-x: hidden;
   padding-bottom: 50px;
-}  
+}
 
 
 /* INTRO SECTION
@@ -123,7 +123,7 @@ button:focus {outline:0;}
   background: #f0f0f0;
   color: #000;
 }
- 
+
  /*BEFORE Elements */
 .timeline ul li div::before {
   content: '';
@@ -140,7 +140,7 @@ button:focus {outline:0;}
 .timeline ul li:nth-child(odd) div {
   left: 45px;
 }
- 
+
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
@@ -153,7 +153,7 @@ button:focus {outline:0;}
   left: -439px;
 
 }
- 
+
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
@@ -167,7 +167,7 @@ button:focus {outline:0;}
   transition: background .5s ease-in-out;
 
 }
- 
+
 .timeline ul li.in-view::after {
   border-style: solid;
   border-width: 5px;
@@ -175,17 +175,7 @@ button:focus {outline:0;}
 
 }
 /*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
+
 .timeline ul .sacrates.in-view::after {
   border-style: solid;
   border-width: 5px;
@@ -241,18 +231,54 @@ button:focus {outline:0;}
   border-width: 5px;
   background-image: url("../assets/AKI.png");
 }
+
+.timeline ul .germany1.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/axis-01.png");
+}
+
+.timeline ul .atrocity.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/atrocityIco-01.png");
+}
+
+.timeline ul .redscare.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/redScare-01.png");
+}
+
+.timeline ul .monarchy.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/monarchyIco-01.png");
+}
+
+.timeline ul .hollywood.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/vid-01.png");
+}
+
+.timeline ul .moi.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/MOI-01.png");
+}
+
+.timeline ul .worldfair.in-view::after {
+  border-style: solid;
+  border-width: 5px;
+  background-image: url("../assets/icons/worldFair-01.png");
+}
  /*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
-/*SPECIFIC IMAGES CAN GO HERE*/
+
+
+
+
+
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
@@ -263,11 +289,11 @@ button:focus {outline:0;}
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px,0,0);
 }
- 
+
 .timeline ul li:nth-child(even) div {
   transform: translate3d(-200px,0,0);
 }
- 
+
 .timeline ul li.in-view div {
   transform: none;
   visibility: visible;
@@ -280,19 +306,19 @@ button:focus {outline:0;}
   opacity: 0;
   transition: all .5s ease-in-out;
   border-radius: 15px;
-  background:#555555; 
-  color: white; 
+  background:#555555;
+  color: white;
   border-radius:0px;
 }
 
 .timeline ul li:nth-child(odd) div.bigDate {
   transform: translate3d(300px,0,0);
 }
- 
+
 .timeline ul li:nth-child(even) div.bigDate {
   transform: translate3d(-300px,0,0);
 }
- 
+
 .timeline ul li:nth-child(even).in-view div.bigDate {
   transform: translate3d(80px,0,0);
   visibility: visible;
@@ -328,7 +354,7 @@ button:focus {outline:0;}
 ---------------------------/*@ media shit*/------------------------------
 
 @media screen and (max-width: 1200px){
-    
+
 }
 @media screen and (max-width: 900px) {
   .timeline ul li div {
@@ -344,19 +370,19 @@ button:focus {outline:0;}
 
 @media screen and (max-width: 600px) {
     .intro h1{font-size:50px;}
-    
+
     .timeline ul li {
     margin-left: 20px;
   }
-    
+
   .timeline ul li div {
     width: calc(100vw - 91px);
   }
-   
+
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
-   
+
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
@@ -365,7 +391,7 @@ button:focus {outline:0;}
   .timeline ul li div.bigDate {
     width: calc(100vw);
   }
-   
+
   .timeline ul li:nth-child(even) div.bigDate {
     left: -80px;
   }
@@ -398,5 +424,3 @@ svgClose:focus {outline:0}
 .timeline:focus {outline:0}
 
 md-content:focus {outline:0}
-
-
